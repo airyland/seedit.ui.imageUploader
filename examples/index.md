@@ -18,9 +18,10 @@
 seajs.use('imageUploader', function(imageUploader) {
     (function($) {
         var uploader = imageUploader.simpleUploader({
-            trigger: 'test',
-            callback: function(data) {
-                $('#test_out').html('<img width="300" style="max-height:100px;" src="' + data.data.url + '">' + '<br/>上传成功，地址是:' + '<br/><code>'+data.data.url+'</code>');
+            api:'http://image.office.bozhong.com/upload.php',// 使用测试环境的api
+            trigger: 'test', // 上传按钮
+            callback: function(data) { // 回调函数
+                $('#test_out').html('<br/>上传成功，地址是:' + '<br/><code>'+data.data.url+'</code>');
             }
         });
     })(jQuery);
