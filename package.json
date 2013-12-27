@@ -1,0 +1,26 @@
+{
+  "family": "seedit",
+  "name": "imageUploader",
+  "version": "0.0.1",
+  "description": "image uploader",
+  "homepage": "https://github.com/airyland/seedit",
+  "author": "airyland",
+  "maintainers": [
+    "airyland"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/airyland/seedit.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [],
+  "licenses": "MIT",
+  "spm": {
+    "output": ["imageUploader.js"],
+    "alias": {},
+    "devAlias": {},
+    "engines": {}
+  }
+}
