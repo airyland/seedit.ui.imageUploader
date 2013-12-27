@@ -1,15 +1,15 @@
 /**
- * SWFUpload: http://www.swfupload.org, http://swfupload.googlecode.com
- *
- * mmSWFUpload 1.0: Flash upload dialog - http://profandesign.se/swfupload/,  http://www.vinterwebb.se/
- *
- * SWFUpload is (c) 2006-2007 Lars Huring, Olov Nilzén and Mammon Media and is released under the MIT License:
- * http://www.opensource.org/licenses/mit-license.php
- *
- * SWFUpload 2 is (c) 2007-2008 Jake Roberts and is released under the MIT License:
- * http://www.opensource.org/licenses/mit-license.php
- *
- */
+  * SWFUpload: http://www.swfupload.org, http://swfupload.googlecode.com
+  *
+  * mmSWFUpload 1.0: Flash upload dialog - http://profandesign.se/swfupload/,  http://www.vinterwebb.se/
+  *
+  * SWFUpload is (c) 2006-2007 Lars Huring, Olov Nilzén and Mammon Media and is released under the MIT License:
+  * http://www.opensource.org/licenses/mit-license.php
+  *
+  * SWFUpload 2 is (c) 2007-2008 Jake Roberts and is released under the MIT License:
+  * http://www.opensource.org/licenses/mit-license.php
+  *
+  */
 /* ******************* */
 /* Constructor & Init  */
 /* ******************* */
@@ -388,12 +388,12 @@ SWFUpload.prototype.stopUpload = function() {
 };
 
 /* ************************
- * Settings methods
- *   These methods change the SWFUpload settings.
- *   SWFUpload settings should not be changed directly on the settings object
- *   since many of the settings need to be passed to Flash in order to take
- *   effect.
- * *********************** */
+  * Settings methods
+  *   These methods change the SWFUpload settings.
+  *   SWFUpload settings should not be changed directly on the settings object
+  *   since many of the settings need to be passed to Flash in order to take
+  *   effect.
+  * *********************** */
 // Public: getStats gets the file statistics object.
 SWFUpload.prototype.getStats = function() {
     return this.callFlash("GetStats");
@@ -830,7 +830,7 @@ define("seedit/imageUploader/0.0.1/imageUploader-debug", [], function(require, e
     var imageUploader;
     var simpleUploader;
     var defaultOption = {
-        upload_url: "http://image.office.bozhong.com/upload.php",
+        upload_url: "http://image.seedit.com/upload.php",
         flash_url: "http://172.16.5.98/common/ui/imageUploader/src/swfupload.swf",
         file_size_limit: "20 MB",
         post_params: {
@@ -863,7 +863,9 @@ define("seedit/imageUploader/0.0.1/imageUploader-debug", [], function(require, e
             var target = opt.trigger;
             var callback = opt.callback;
             var type = opt.type || "cms";
+            var api = opt.api;
             $.extend(option, {
+                upload_url: api,
                 button_placeholder_id: target,
                 post_params: {
                     "class": type
