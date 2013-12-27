@@ -18,7 +18,7 @@
   "keywords": [],
   "licenses": "MIT",
   "spm": {
-    "output": ["imageUploader.js"],
+    "output": ["imageUploader.js","button.png","swfupload.swf"],
     "alias": {},
     "devAlias": {},
     "engines": {}
