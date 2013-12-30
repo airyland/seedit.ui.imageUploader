@@ -974,6 +974,8 @@
          post_params: {
              class: 'cms'
          },
+         file_types : "*.jpg;*.gif",
+         file_types_description: "请选择图片文件",
          button_width: 72,
          button_height: 23,
          file_post_name: "file",
