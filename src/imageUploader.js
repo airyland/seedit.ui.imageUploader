@@ -970,7 +970,7 @@
      var defaultOption = {
          upload_url: "http://image.seedit.com/upload.php",
          flash_url: "http://172.16.5.98/common/ui/imageUploader/src/swfupload.swf",
-         file_size_limit: "20 MB",
+         file_size_limit: "8 MB",
          post_params: {
              class: 'cms'
          },
