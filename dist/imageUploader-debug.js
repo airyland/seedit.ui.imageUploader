@@ -827,19 +827,22 @@ SWFUpload.Console.writeLine = function(message) {
 };
 
 define("seedit/imageUploader/0.0.1/imageUploader-debug", [], function(require, exports, module) {
+    var STATIC = "http://scdn.bozhong.com/source/";
     var imageUploader;
     var simpleUploader;
     var defaultOption = {
         upload_url: "http://image.seedit.com/upload.php",
-        flash_url: "http://172.16.5.98/common/ui/imageUploader/src/swfupload.swf",
-        file_size_limit: "20 MB",
+        flash_url: STATIC + "common/ui/imageUploader/src/swfupload.swf",
+        file_size_limit: "8 MB",
         post_params: {
             "class": "cms"
         },
+        file_types: "*.jpg;*.png;*.gif",
+        file_types_description: "请选择图片文件",
         button_width: 72,
         button_height: 23,
         file_post_name: "file",
-        button_image_url: "http://172.16.5.98/common/ui/imageUploader/src/button.png"
+        button_image_url: STATIC + "common/ui/imageUploader/src/button.png"
     };
     (function($) {
         var option = {
