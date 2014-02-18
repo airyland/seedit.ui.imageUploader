@@ -1005,11 +1005,12 @@
          $.extend(option, defaultOption);
 
          simpleUploader = function(opt) {
+             var option2 = $.extend({},option);
              var target = opt.trigger;
              var callback = opt.callback;
              var type = opt.type || 'cms';
              var api = opt.api;
-             $.extend(option, {
+             $.extend(option2, {
                  upload_url: api,
                  button_placeholder_id: target,
                  post_params: {
@@ -1030,9 +1031,9 @@
              });
              // 如果还有swfupload设置
              if (opt.option) {
-                 $.extend(option, opt.option);
+                 $.extend(option2, opt.option);
              }
-             return new SWFUpload(option);
+             return new SWFUpload(option2);
          };
      })(jQuery);
 
